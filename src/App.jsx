@@ -1,12 +1,20 @@
 import './App.css'
-import Product from './components/Product'
-
+import Navbar from './components/Navbar';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Product from './components/Product';
 function App() {
-
   return (
     <>
-    <h1>Hello World</h1>
-    <Product/>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/props" element={<Product/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
