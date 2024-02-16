@@ -20,6 +20,9 @@ const Navbar = () => {
                 <li className="nav-item">
                 <Link className="nav-link" to="/user">UseState</Link>
                 </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/country">Country</Link>
+                </li>
             </ul>
             </div>
         </div>
