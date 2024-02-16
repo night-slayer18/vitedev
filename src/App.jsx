@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import Product from './components/Product';
+import User from './components/User';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/props" element={<Product/>} />
+          <Route exact path="/user" element={<User/>} />
         </Routes>
       </BrowserRouter>
     </>
