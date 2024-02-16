@@ -18,7 +18,7 @@ const Navbar = () => {
                 <Link className="nav-link" to="/props">Props</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link" to="/user">User</Link>
+                <Link className="nav-link" to="/user">UseState</Link>
                 </li>
             </ul>
             </div>
