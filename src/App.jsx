@@ -9,6 +9,7 @@ import Product from './components/Product';
 import User from './components/User';
 import Country from './components/Country';
 import Effect from './components/Effect';
+import ApiCall from './components/ApiCall';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/user" element={<User/>} />
           <Route exact path="/country" element={<Country/>} />
           <Route exact path="/useeffect" element={<Effect/>} />
+          <Route exact path="/api" element= {<ApiCall/>} />
         </Routes>
       </BrowserRouter>
     </>
