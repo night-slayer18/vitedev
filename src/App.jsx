@@ -8,6 +8,7 @@ import {
 import Product from './components/Product';
 import User from './components/User';
 import Country from './components/Country';
+import Effect from './components/Effect';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/props" element={<Product/>} />
           <Route exact path="/user" element={<User/>} />
           <Route exact path="/country" element={<Country/>} />
+          <Route exact path="/useeffect" element={<Effect/>} />
         </Routes>
       </BrowserRouter>
     </>
