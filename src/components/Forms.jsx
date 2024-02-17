@@ -1,19 +1,18 @@
 import { useState } from "react";
 const Forms = () => {
-    const [name, setName] = useState('') 
-    const [email, setEmail] = useState('')
-    const onChangeName = (e) => {
-        setName(e.target.value)  // This will log the value entered in the input field. the target is the input field and the value is the value entered in the input field. do console.log(e) to see the whole event object.
-    }
-    const onChangeEmail = (e) => {
-        setEmail(e.target.value)  
+    const [details, setDetails] = useState({name: '', email: '', age: ''})
+    const onChange = (e) => {
+        setDetails({...details, [e.target.name]: e.target.value})
+        console.log(details)
     }
   return (
     <div className="card">
-        <h5>{name}</h5>
-        <h5>{email}</h5>
-        <input value={name} onChange={onChangeName} type="text" className="input-group-text my-4" placeholder='Enter name'/> 
-        <input value={email} onChange={onChangeEmail} type="text" className="input-group-text my-4" placeholder ='Enter Email' />
+        <h5>Name : {details.name}</h5>
+        <h5>Email : {details.email}</h5>
+        <h5>Age : {details.age}</h5>
+        <input name="name" value={details.name} onChange={onChange} type="text" className="input-group-text my-4" placeholder='Enter name'/> 
+        <input name="email" value={details.email} onChange={onChange} type="text" className="input-group-text my-4" placeholder ='Enter Email' />
+        <input name="age" value={details.age} onChange={onChange} type="text" className="input-group-text my-4" placeholder ='Enter Age' />
     </div>
   )
 }
