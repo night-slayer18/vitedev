@@ -15,6 +15,7 @@ import Home from './components/Home';
 import Component1 from './components/childs/Component1';
 import Component2 from './components/childs/Component2';
 import Component3 from './components/childs/Component3';
+import RefComponent from './components/RefComponent';
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/useeffect" element={<Effect/>} />
           <Route exact path="/api" element= {<ApiCall/>} />
           <Route exact path="/form" element = {<Forms/>} />
+          <Route exact path="/ref" element={<RefComponent/>} />
         </Routes>
       </BrowserRouter>
     </>
