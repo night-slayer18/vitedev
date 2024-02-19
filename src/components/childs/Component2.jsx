@@ -1,7 +1,12 @@
+import { useContext } from "react"
+import valueContext from "../../context/Context"
+
 const Component2 = () => {
+  const {username,setUsername} =  useContext(valueContext)
   return (
-    <div>
-      <h1>Component 2</h1>
+    <div className="container">
+      <h1>Component 2 {username}</h1>
+      <button className="btn btn-success" onClick={()=>setUsername('rohan')}>Change Username</button>
     </div>
   )
 }

@@ -16,9 +16,11 @@ import Component1 from './components/childs/Component1';
 import Component2 from './components/childs/Component2';
 import Component3 from './components/childs/Component3';
 import RefComponent from './components/RefComponent';
+import UploadContext from './context/UploadContext';
 function App() {
   return (
     <>
+      <UploadContext>
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -36,6 +38,7 @@ function App() {
           <Route exact path="/ref" element={<RefComponent/>} />
         </Routes>
       </BrowserRouter>
+      </UploadContext>
     </>
   )
 }
